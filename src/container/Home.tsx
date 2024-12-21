@@ -1,12 +1,11 @@
 import { useNavigate } from "react-router";
 import Card from "../components/Card/Card";
-import Mybutton from "../components/MyButton/Mybutton";
 
 const Home = () => {
   const navi = useNavigate();
-  const handleCardClick = () => {
-    console.log("Card clicked!");
-  };
+  // const handleCardClick = () => {
+  //   console.log("Card clicked!");
+  // };
   return (
     <div className="home">
       <h1 className="home__title">Мотоцикли в наявності</h1>
