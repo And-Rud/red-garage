@@ -3,10 +3,11 @@
   justify-content: center;
 }
 .page {
-  max-width: 1200px;
   width: 100%;
   height: 100%;
-  background-color: #ede9dd;
+  background-color: gray;
+  max-width: 1200px;
+
 }
 .header {
   height: 70px;
@@ -14,7 +15,9 @@
   border-bottom: 1px solid #8f8a7c;
   align-items: center;
   justify-content: space-between;
-  background-color: #f2f3ed;
+  background-image: url(/public/png/ambar2.jpg);
+  color: white;
+  position: relative;
 }
 .header__title {
   font-weight: 500;
@@ -24,22 +27,66 @@
 .menu__container {
   display: flex;
   gap: 30px;
+  color: black;
+  margin-right: 30px;
 }
+.menu__text {
+  color: white;
+  text-decoration: none; 
+}
+/* Кнопка меню */
+.menu-toggle {
+  display: none;
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+/* Адаптивний дизайн */
+@media (max-width: 768px) {
+  .menu__container {
+    display: none; /* Ховаємо меню за замовчуванням */
+    flex-direction: column; /* Вертикальний список */
+    gap: 8px;
+    background-color: #444;
+    position: absolute; /* Важливо для прив'язки до хедера */
+    top: 20px; /* Вирівнюємо меню нижче хедера */
+    right: 16px; /* Вирівнюємо меню по правому краю */
+    padding: 16px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000; /* Забезпечує видимість над іншими елементами */
+  }
+
+  .menu__container--open {
+    display: flex; /* Відображаємо меню, якщо відкрито */  
+}
+
+  .menu-toggle {
+    display: block; /* Відображаємо кнопку меню */
+  }}
 .header__button {
   margin-right: 30px;
   display: flex;
   gap: 30px;
 }
-.wellcome {
+.home {
   display: flex;
-  gap: 70px;
+  gap: 20px;
   flex-direction: column;
+  color: white;
 }
-.well__container {
+.home__title {
+  display: flex;
+  align-self: center;
+}
+.home__container {
   margin-top: 80px;
   display: flex;
-  gap: 80px;
   justify-content: space-between;
+  color: white;
 }
 .well__title__container {
   margin-left: 30px;
@@ -71,7 +118,8 @@
 .ab__container {
   display: flex;
   gap: 60px;
-  background-color: #f2f3ed;
+  background-color: gray;
+  color: white;
   height: 100vh;
 }
 .ab__text__container {
@@ -97,6 +145,7 @@
   gap: 30px;
   margin: 0px 30px;
   height: 100vh;
+  color: white;
 }
 .ser__title {
   display: flex;
@@ -123,8 +172,7 @@
   border-left: 3px solid #8f8a7c;
   padding-left: 20px;
 }
-.ser__card__icon {
-}
+
 .ser__card__title {
   font-size: 18px;
   font-weight: 500;
@@ -156,8 +204,7 @@
   display: flex;
   gap: 3px;
 }
-.tes__card__text {
-}
+
 .tes__con {
   display: flex;
   gap: 20px;
@@ -207,4 +254,23 @@
 }
 .post1__text {
   margin: 0px 0px;
+}
+.card-container {
+  display: flex; /* Встановлюємо гнучкий макет */
+  flex-wrap: wrap; /* Дозволяємо карткам переноситися на новий ряд */
+  gap: 16px; /* Відстань між картками */
+  justify-content: center; /* Вирівнюємо картки по центру */
+  padding: 16px; /* Відступи всередині контейнера */
+}
+
+@media (min-width: 768px) {
+  .card-container {
+    justify-content: space-between; /* Вирівнюємо картки по краях */
+  }
+}
+
+@media (min-width: 1024px) {
+  .card-container {
+    justify-content: flex-start; /* Вирівнюємо картки до лівого краю */
+  }
 }

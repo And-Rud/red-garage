@@ -5,18 +5,19 @@
   cursor: pointer;
   transition: opasity 0.7s;
   width: max-content;
+  border-radius: 5px;
 }
 
 .mybutton__light {
   padding: 7px 15px;
   border: 1px solid #6e685b;
-  background-color: #ede9dd;
+  background-color: white;
 }
 
 .mybutton__dark {
   padding: 7px 15px;
   border: 1px solid #6e685b;
-  background-color: #373020;
+  background-color: black;
   color: #ede9dd;
 }
 

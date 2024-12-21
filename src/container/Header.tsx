@@ -1,21 +1,25 @@
-import React from "react";
-import Mybutton from "../components/MyButton/Mybutton";
 import { Link } from "react-router-dom";
+import { useState } from "react";
 
 const Header = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
+
   return (
     <div className="header">
-      <div className="header__title">OPTIMENDS</div>
-      <div className="menu__container">
-        <Link to="/">Home</Link>
-        <Link to="/about">About</Link>
-        <Link to="/services">Services</Link>
-        <Link to="/testimonals">Testimonals</Link>
-        <Link to="/blog">Blog</Link>
-      </div>
-      <div className="header__button">
-        <Mybutton className={`mybutton__light`}>Contact us</Mybutton>
-        <Mybutton className={`mybutton__dark`}>Book</Mybutton>
+      <div className="header__title">RED GARAGE</div>
+      <button className="menu-toggle" onClick={toggleMenu}>
+        ☰
+      </button>
+      <div className={`menu__container ${menuOpen ? "menu__container--open" : ""}`}>
+        <Link className="menu__text" to="/" onClick={() => setMenuOpen(false)}>Home</Link>
+        <Link className="menu__text" to="/about" onClick={() => setMenuOpen(false)}>About</Link>
+        <Link className="menu__text" to="/services" onClick={() => setMenuOpen(false)}>Services</Link>
+        <Link className="menu__text" to="/moto" onClick={() => setMenuOpen(false)}>Moto</Link>
+        <Link className="menu__text" to="/scooters" onClick={() => setMenuOpen(false)}>Scooters</Link>
       </div>
     </div>
   );

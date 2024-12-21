@@ -1,0 +1,55 @@
+.card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    /* padding: 16px; */
+    max-width: 190px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .card:focus {
+    outline: 2px solid #007BFF;
+  }
+  
+  .card__image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px 8px 0 0;
+    margin-bottom: 16px;
+  }
+  
+  .card__title {
+    margin: 0 0 8px;
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  .card__description {
+    margin: 0 0;
+    font-size: 0.7rem;
+    color: white;
+  }
+  
+  .card__content {
+    margin-top: 16px;
+    margin-bottom: 10px;
+  }
+
+  .custom-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1 1 calc(33.333% - 32px); /* Картка займає третину ширини контейнера */
+    max-width: 190px; /* Максимальна ширина картки */
+    min-width: 200px; /* Мінімальна ширина картки */
+  }
+  

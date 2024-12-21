@@ -5,9 +5,9 @@ import Home from "./container/Home";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import About from "./container/About";
 import Services from "./container/Services";
-import Testimonals from "./container/Testimonals";
-import Blog from "./container/Blog";
+import Moto from "./container/Moto";
 import Post1 from "./container/Post1";
+import Scooters from "./container/Scooters";
 
 function App() {
   return (
@@ -19,8 +19,8 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/services" element={<Services />} />
-            <Route path="/testimonals" element={<Testimonals />} />
-            <Route path="/blog" element={<Blog />} />
+            <Route path="/moto" element={<Moto />} />
+            <Route path="/scooters" element={<Scooters />} />
             <Route path="/post1" element={<Post1 />} />
           </Routes>
         </BrowserRouter>
