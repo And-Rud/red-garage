@@ -1,0 +1,210 @@
+.App {
+  display: flex;
+  justify-content: center;
+}
+.page {
+  max-width: 1200px;
+  width: 100%;
+  height: 100%;
+  background-color: #ede9dd;
+}
+.header {
+  height: 70px;
+  display: flex;
+  border-bottom: 1px solid #8f8a7c;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f2f3ed;
+}
+.header__title {
+  font-weight: 500;
+  font-size: 18px;
+  margin-left: 30px;
+}
+.menu__container {
+  display: flex;
+  gap: 30px;
+}
+.header__button {
+  margin-right: 30px;
+  display: flex;
+  gap: 30px;
+}
+.wellcome {
+  display: flex;
+  gap: 70px;
+  flex-direction: column;
+}
+.well__container {
+  margin-top: 80px;
+  display: flex;
+  gap: 80px;
+  justify-content: space-between;
+}
+.well__title__container {
+  margin-left: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.well__title {
+  margin: 0px 0px;
+  font-size: 42px;
+}
+.well__p {
+  margin: 0px 0px;
+}
+.well__text {
+  display: flex;
+  flex-direction: column;
+  margin-right: 30px;
+  max-width: 450px;
+  gap: 20px;
+}
+.well__text__p {
+  margin-top: 0px;
+}
+.well__img {
+  display: flex;
+  justify-content: center;
+}
+.ab__container {
+  display: flex;
+  gap: 60px;
+  background-color: #f2f3ed;
+  height: 100vh;
+}
+.ab__text__container {
+  margin-left: 30px;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+}
+.ab__title {
+  margin-top: 120px;
+}
+.ab__text {
+  font-weight: 500;
+  margin: 0px 0px;
+}
+.ab__img {
+  margin-right: 30px;
+  margin-top: 40px;
+}
+.ser__container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin: 0px 30px;
+  height: 100vh;
+}
+.ser__title {
+  display: flex;
+  justify-content: center;
+  margin-top: 120px;
+  margin-bottom: 0px;
+  font-size: 42px;
+}
+.ser__text {
+  display: flex;
+  margin: 0px 0px;
+  margin-bottom: 30px;
+  justify-content: center;
+}
+.ser__card {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 30px;
+}
+.ser__card__item {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  border-left: 3px solid #8f8a7c;
+  padding-left: 20px;
+}
+.ser__card__icon {
+}
+.ser__card__title {
+  font-size: 18px;
+  font-weight: 500;
+}
+.tes__container {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 30px;
+  background-color: #f2f3ed;
+  height: 100vh;
+}
+.tes__title {
+  margin-top: 60px;
+}
+.tes__p {
+  margin-bottom: 80px;
+}
+.tes__card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 70px;
+}
+.tes__card__item {
+  display: flex;
+  flex-direction: column;
+  padding-left: 30px;
+}
+.tes__rating {
+  display: flex;
+  gap: 3px;
+}
+.tes__card__text {
+}
+.tes__con {
+  display: flex;
+  gap: 20px;
+}
+
+.tes__con__name {
+  margin: 0px 0px;
+  padding-bottom: 10px;
+}
+.tes__con__pos {
+  margin: 0px 0px;
+}
+.blog {
+  margin: 0px 30px;
+  height: 100vh;
+}
+.b__title {
+  margin-top: 60px;
+}
+.b__text {
+  padding-bottom: 60px;
+}
+.b__card {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 90px;
+}
+.b__card__item {
+  cursor: pointer;
+}
+.b__card__title {
+  max-width: 310px;
+}
+.b__card__text {
+  max-width: 310px;
+}
+.post1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding-top: 40px;
+  height: 100vh;
+}
+.post1__title {
+  margin: 0px 0px;
+}
+.post1__text {
+  margin: 0px 0px;
+}

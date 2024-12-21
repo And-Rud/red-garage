@@ -1,0 +1,25 @@
+.mybutton {
+  padding: 7px 15px;
+  border: 1px solid #6e685b;
+  color: #6e685b;
+  cursor: pointer;
+  transition: opasity 0.7s;
+  width: max-content;
+}
+
+.mybutton__light {
+  padding: 7px 15px;
+  border: 1px solid #6e685b;
+  background-color: #ede9dd;
+}
+
+.mybutton__dark {
+  padding: 7px 15px;
+  border: 1px solid #6e685b;
+  background-color: #373020;
+  color: #ede9dd;
+}
+
+.mybutton:hover {
+  opacity: 0.7;
+}
