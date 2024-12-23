@@ -1,32 +1,71 @@
+import { useNavigate } from "react-router";
+import Card from "../components/Card/Card";
 import Mybutton from "../components/MyButton/Mybutton";
 
 const Home = () => {
+  const navi = useNavigate();
+  const handleCardClick = () => {
+    console.log("Card clicked!");
+  };
   return (
-    <div className="wellcome">
-      <div className="well__container">
-        <div className="well__title__container">
-          <h1 className="well__title">RED GARAGE</h1>
-          <h1 className="well__title">WELLNESS JOURNEY</h1>
-          <p className="well__p">Empower Your life</p>
-        </div>
-        <div className="well__text">
-          <p className="well__text__p">
-            Sefe erferf eferfe ererferfer erferferf erferfe erf er erferg5t
-            plkoh jihrevbhe hberuhvbuh jehbvjhebr ehbvjhbe hebhberhb ehrbfhebrjh
-            ehbrjvhebuhb
-          </p>
-          <div>
-            <Mybutton className="mybutton__dark">Start journey</Mybutton>
-          </div>
-        </div>
-      </div>
-      <div className="well__img">
-        <img
-          src="/png/well_img.png"
-          alt="PhotoWell"
-          width="1000px"
-          height="600px"
-        />
+    <div className="home">
+      <h1 className="home__title">Мотоцикли в наявності</h1>
+      <div className="card-container">
+        <Card
+          title="KTM RC390 ABS"
+          description={<>Об’єм двигуна : 400cc <br />Рік : 2018 <br />Доступність : Доступний</>}
+          imageUrl="/images/moto.jpg"
+          className="custom-card"
+          onClick={() => navi("/post1")}
+        >
+          <span>$3400</span>
+        </Card>
+        <Card
+          title="KTM RC390 ABS"
+          description={<>Об’єм двигуна : 400cc <br />Рік : 2018 <br />Доступність : Доступний</>}
+          imageUrl="/images/moto.jpg"
+          className="custom-card"
+          onClick={() => navi("/post1")}
+        >
+          <span>$3400</span>
+        </Card>
+        <Card
+          title="KTM RC390 ABS"
+          description={<>Об’єм двигуна : 400cc <br />Рік : 2018 <br />Доступність : Доступний</>}
+          imageUrl="/images/moto.jpg"
+          className="custom-card"
+          onClick={() => navi("/post1")}
+        >
+          <span>$3400</span>
+        </Card>
+        <Card
+          title="KTM RC390 ABS"
+          description={<>Об’єм двигуна : 400cc <br />Рік : 2018 <br />Доступність : Доступний</>}
+          imageUrl="/images/moto.jpg"
+          className="custom-card"
+          onClick={() => navi("/post1")}
+        >
+          <span>$3400</span>
+        </Card>
+        <Card
+          title="KTM RC390 ABS"
+          description={<>Об’єм двигуна : 400cc <br />Рік : 2018 <br />Доступність : Доступний</>}
+          imageUrl="/images/moto.jpg"
+          className="custom-card"
+          onClick={() => navi("/post1")}
+        >
+          <span>$3400</span>
+        </Card>
+        <Card
+          title="KTM RC390 ABS"
+          description={<>Об’єм двигуна : 400cc <br />Рік : 2018 <br />Доступність : Доступний</>}
+          imageUrl="/images/moto.jpg"
+          className="custom-card"
+          onClick={() => navi("/post1")}
+        >
+          <span>$3400</span>
+        </Card>
+
       </div>
     </div>
   );
